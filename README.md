@@ -9,31 +9,37 @@ https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#o
 ```
 ### Requisitos
 * [x] Nodejs
-* [x] mysql
-* [x] postman
+```
+https://nodejs.org/en/
+```
+
+* [x] Xampp que contem o mysql
+```
+https://www.apachefriends.org/pt_br/download.html
+```
+* [x] postman | insomnia
+```
+https://www.postman.com/
+```
+```
+https://insomnia.rest/
+```
 
 ### Dependências
 * express gerênciar rotas
-* nodemon atualizar sempre que o código for modificado
+* nodemon atualizar o código quando for modificado
 
 ### Inciando o projeto
 * criar um ou usar um diretório
 * primeiro comando no terminal
     * npm init -y
 * segundo comando no terminal
-    * npm install express
     * npm install nodemon
+    * npm install express
 ### Objeto Json
 ~~~
 {
-    "produto": "ps3,
-    "quantidade: 10,
-    "preco": 200,
-    "total": 0
-    "categoria" [
-        "acessorios",
-        "console",
-        "jogos"
-    ]
+    "messagem": "Conectou com sucesso",
+    "messagem": "Erro na conexão",
 }
 ~~~
