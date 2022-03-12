@@ -15,10 +15,13 @@ app.route('/cadastro').put( (req,res) => {
     author = req.body.author
     res.send(author)
 })
-
 app.route('/cadastro/:id').delete( (req,res) =>{
     res.send(req.params.id)
 })
+/***  */
+app.route('/user').get( (req,res) => res.send(req.query.name))
+app.route('/user').post( (req,res) => res.send(req.body))
+app.route('/user/:id').get( (req,res) => res.send(req.params.parametro))
 
 
 app.listen('3000')
