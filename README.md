@@ -26,8 +26,15 @@ https://insomnia.rest/
 ```
 
 ### Dependências
-* express gerênciar rotas
 * nodemon atualizar o código quando for modificado
+```
+npm install nodemon
+```
+* express gerênciar rotas
+```
+npm install express
+```
+
 
 ### Inciando o projeto
 * criar um ou usar um diretório
