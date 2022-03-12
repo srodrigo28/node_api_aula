@@ -12,21 +12,21 @@ https://app.rocketseat.com.br/node/trabalhando-com-apis/group/api-no-back-end/le
 https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
 ```
 ### Requisitos
-[x]\(Optional) Nodejs
-[x] mysql
+* [x] Nodejs
+* [x] mysql
 * [x] postman
 
 ### Dependências
-    * express gerênciar rotas
-    * nodemon atualizar sempre que o código for modificado
+* express gerênciar rotas
+* nodemon atualizar sempre que o código for modificado
 
 ### Inciando o projeto
-    * criar um ou usar um diretório
-    * primeiro comando no terminal
-        * npm init -y
-    * segundo comando no terminal
-        * npm install express
-        * npm install nodemon
+* criar um ou usar um diretório
+* primeiro comando no terminal
+    * npm init -y
+* segundo comando no terminal
+    * npm install express
+    * npm install nodemon
 ### Objeto Json
 ~~~
 {
