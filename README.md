@@ -8,7 +8,7 @@
     https://app.rocketseat.com.br/node/trabalhando-com-apis/group/api-no-back-end/lesson/get-1
     ´´´
 ### Requisitos
-    * [x] Nodejs
+    * [x]\(Optional) Nodejs
     * [x] mysql
     * [x] postman
 
@@ -24,6 +24,7 @@
         * npm install express
         * npm install nodemon
 ### Objeto Json
+~~~
 {
     "produto": "ps3,
     "quantidade: 10,
@@ -35,3 +36,4 @@
         "jogos"
     ]
 }
+~~~
