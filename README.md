@@ -1,9 +1,9 @@
 # Aplicação Node
-### Orientação::
+### Orientação 1
     ´´´
     * encurtador.com.br/izQS9
     ´´´
-
+### Orientação 2
     ´´´
     * url: https://app.rocketseat.com.br/node/trabalhando-com-apis/group/api-no-back-end/lesson/get-1
     ´´´
