@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api com Fetch</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="renderApiResult"> </div>
+    <hr>
+    <p id="userName"></p>
+    <p id="userCity"></p>
+    <img id="userAvatar" src="" alt="">
+</body>
+
+<script>
+    const url = "http://localhost:5500/api"
+
+function getUser(){
+    fetch(url)
+        .then(response => response.json())
+        .then(data => renderApiResult.textContent = JSON.stringify(data))
+        .catch(error => console.error(error))
+}
+function getUser(){
+    fetch(`${url}/1`)
+    .then(response => response.json())
+    .then(data => {
+        userName.textContent = data.name
+        userCity.textContent = data.city
+        userAvatar.src = data.avatar
+    })
+    .catch(error => console.error(error))
+}
+getUser()
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api com Fetch</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="alertApi">OK</div>
+    <div id="renderApiResult"> </div>
+    <p id="userName"></p>
+    <p id="userCity"></p>
+    <img id="userAvatar" src="" alt="">
+</body>
+
+<script>
+    const url = "http://localhost:5500/api"
+
+function getUsers(){
+    fetch(url)
+        .then(response => response.json())
+        .then(data => renderApiResult.textContent = JSON.stringify(data))
+        .catch(error => console.error(error))
+}
+function getUser(){
+    fetch(`${url}/24`)
+    .then(response => response.json())
+    .then(data => {
+        userName.textContent = data.name
+        userCity.textContent = data.city
+        userAvatar.src = data.avatar
+    })
+    .catch(error => console.error(error))
+}
+function addUser(newUser){
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(newUser),
+        headers: {
+            "Content-type": "application/json",
+            "charset": "UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => alertApi.textContent = data)
+    .catch(error => console.error(error ))
+}
+const newUser = {
+    name: "Olivia Zars",
+    avatar: "https://i.pinimg.com/564x/32/4b/5f/324b5f47fa41d1a78f67acd073c95f9c.jpg",
+    city: "Rio do Sul"
+}
+function updateUser(updatedUser, id){
+    fetch(`${url}/${id}`, {
+        method: "PUT",
+        body: JSON.stringify(updatedUser),
+        headers: {
+            "Content-type": "application/json",
+            "Charset": "UTF-8"
+        }
+    })
+    .then(response. response.JSON())
+    .then(data => alertApi.textContent = data)
+
+    .catch(error => console.log(error))
+}
+const updatedUser = {
+    name: "Mayara Clovis",
+    avatar: "https://pbs.twimg.com/profile_images/1298987426438762497/GEn1lxu__400x400.jpg",
+    city: "Bahia"
+}
+
+function deleteUser(id){
+    fetch(`${url}/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => alertApi.textContent =
+        JSON.stringify(data))
+    .catch(error => console.error(error))
+}
+
+//updateUser(updatedUser, 1)
+addUser(newUser)
+//deleteUser(1)
+getUsers()
+//getUser(1)
+</script>
+</html>
