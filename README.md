@@ -1,13 +1,9 @@
 # Aplicação Node
 ### Orientação 1
 ```
-encurtador.com.br/izQS9
-```
-### Orientação 2
-```
 https://app.rocketseat.com.br/node/trabalhando-com-apis/group/api-no-back-end/lesson/get-1
 ```
-### Orientação 3 Guia Git MD
+### Orientação 2 Guia Git MD
 ```
 https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
 ```
