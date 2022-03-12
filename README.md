@@ -35,15 +35,17 @@ https://insomnia.rest/
 ```
 npm init -y
 ```
-* segundo comando no terminal
-* npm install nodemon
-```
-npm install express
-```
-* npm install express
+* Segundo comando no terminal
+* Nodemon
 ```
 npm install nodemon
 ```
+
+* Express
+```
+npm install express
+```
+
 ### Objeto Json
 ~~~
 {
