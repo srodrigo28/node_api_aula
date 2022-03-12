@@ -54,3 +54,22 @@ npm install express
     "messagem": "Erro na conexão",
 }
 ~~~
+
+### index.js
+~~~
+const express = require('express')
+const app = express()
+
+app.use(express.json());
+
+app.get("/", (req, res) => {
+    return res.json({
+        titulo: '<h1>Hello rota com express</h1>',
+        descricao: '<h3>Estudo api com NodeJS</h3>',
+        horas: 100
+    })
+});
+
+app.listen('3001')
+console.log("Rodando")
+~~~
