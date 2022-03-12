@@ -30,12 +30,11 @@ https://insomnia.rest/
 * express gerênciar rotas
 
 ## Inciando o projeto
-* criar um ou usar um diretório
-* primeiro comando no terminal
+* Criar um ou usar um diretório
+* No terminal
 ```
 npm init -y
 ```
-* Segundo comando no terminal
 * Nodemon
 ```
 npm install nodemon
