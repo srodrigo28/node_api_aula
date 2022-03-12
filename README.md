@@ -27,22 +27,23 @@ https://insomnia.rest/
 
 ### Dependências
 * nodemon atualizar o código quando for modificado
-```
-npm install nodemon
-```
 * express gerênciar rotas
+
+## Inciando o projeto
+* criar um ou usar um diretório
+* primeiro comando no terminal
+```
+npm init -y
+```
+* segundo comando no terminal
+* npm install nodemon
 ```
 npm install express
 ```
-
-
-### Inciando o projeto
-* criar um ou usar um diretório
-* primeiro comando no terminal
-    * npm init -y
-* segundo comando no terminal
-    * npm install nodemon
-    * npm install express
+* npm install express
+```
+npm install nodemon
+```
 ### Objeto Json
 ~~~
 {
