@@ -24,16 +24,14 @@
         * npm install express
         * npm install nodemon
 ### Objeto Json
-´´´
-    {
-        "produto": "ps3,
-        "quantidade: 10,
-        "preco": 200,
-        "total": 0
-        "categoria" [
-            "acessorios",
-            "console",
-            "jogos"
-        ]
-    }
-´´´
+{
+    "produto": "ps3,
+    "quantidade: 10,
+    "preco": 200,
+    "total": 0
+    "categoria" [
+        "acessorios",
+        "console",
+        "jogos"
+    ]
+}
